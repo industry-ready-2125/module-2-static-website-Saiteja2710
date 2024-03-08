@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
+        html, body {
+            background-color: #000;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -58,16 +57,52 @@
             font-weight: bold;
         }
 
+        .bt {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid #000;
+        }
+
         footer {
             background-color: #000;
             padding: 10px;
             color: #fff;
             text-align: center;
         }
-        .fl{
-            float:right;
+
+        .fl {
+            float: right;
+            background-color: #e50914;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
-    </style>
+
+        .sec {
+            background-image: url('https://media.istockphoto.com/id/1286371622/photo/abstract-red-and-black-are-light-pattern-with-the-gradient-is-the-with-floor-wall-metal.jpg?b=1&s=612x612&w=0&k=20&c=bVqaKALcZzreuTkGm5TxLtrE57-JCBxH4QDlZFaJWV4=');
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .sec h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .sec p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .sec .bt {
+            margin-bottom: 20px;
+        }
+        </style>
 </head>
 
 <body>
@@ -76,21 +111,21 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">TV Shows</a></li>
-                <li><a href="#">Movies</a></li>
+                <li><a href="/page03.html">Movies</a></li>
                 <li><a href="#">My List</a></li>
-                <li class="fl"><a href="#">Sign in</a></li>
+                <li class="fl"><a href="/page02.html">Sign in</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section class="sec">
             <h1>Welcome to Netflix</h1>
             <p>Watch your favorite TV shows and movies anytime, anywhere.</p>
+            <input placeholder="Enter Email" class="bt">
             <a href="#" class="btn">Get Started</a>
         </section>
     </main>
-
 </body>
 
 </html>
